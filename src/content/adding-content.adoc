@@ -1,0 +1,8 @@
+* link:https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference[Asciidoctor syntax^] is supported.
+* Explore the default link:#_file_structure[file structure of the template].
+* Create a file in the `content` directory and include it in `index.adoc` using the `include::path/to/file.adoc[]` link:https://docs.asciidoctor.org/asciidoc/latest/directives/include[include directive^].
+	** Feel free to customize the project structure as per needs, but make sure to make corresponding changes to the link:https://github.com/HarshKapadia2/asciidoctor-jet/blob/main/.github/workflows/build-deploy-website.yaml[`.github/workflows/build-deploy-website.yaml` file^] in the repository, so that GitHub Actions is able to build and deploy the website properly.
+* Images can be added using the link:https://docs.asciidoctor.org/asciidoc/latest/macros/images[image macro^].
+	** Example:
+
+image::icon-192.png[192, 192, alt="Asciidoctor Jet Logo"]
