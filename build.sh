@@ -15,6 +15,7 @@ rm -rf "${script_dir}/build/"*;
 # Copy files to the 'build' directory
 for path in							\
 	"static"						\
+	"CNAME"							\
 	"manifest.webmanifest"			\
 	"robots.txt"					\
 	"service-worker.js"				\

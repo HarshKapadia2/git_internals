@@ -1,38 +1,34 @@
-<br />
 <p align="center">
-  <img src="./src/static/img/icon-512.png" width="12%" />
+	<img src="./src/static/img/logo.svg" alt="Git Internals" width="80%" />
+	<br />
+	<br />
+	<b>Exploring the internals of Git</b>
+	<br />
+	<br />
+	View the PWA at <a href="https://git.harshkapadia.me">git.harshkapadia.me</a>
 </p>
 
-<h3 align="center"><i>Asciidoctor Jet</i></h3>
-<br />
+### Author's Sessions
 
-<p align="center">
-  A ready-to-use jet black themed template for building static sites using <a href="https://asciidoctor.org">Asciidoctor</a>.
-  <br />
-  <br />
-  <a href="https://harshkapadia2.github.io/asciidoctor-jet"><b>Explore the docs »</b></a>
-  <br />
-  <br />
-  <a href="https://harshkapadia2.github.io/asciidoctor-jet/#_features">Added Features</a>
-  &nbsp;&nbsp;·&nbsp;&nbsp;
-  <a href="https://harshkapadia2.github.io/asciidoctor-jet/#_live_demos">Live Demos</a>
-  &nbsp;&nbsp;·&nbsp;&nbsp;
-  <a href="https://harshkapadia2.github.io/asciidoctor-jet/#_getting_started">Getting Started</a>
-  <br />
-  <br />
-  <a href="https://github.com/HarshKapadia2/asciidoctor-jet/releases/latest"><img src="https://img.shields.io/github/v/release/HarshKapadia2/asciidoctor-jet?label=Asciidoctor%20Jet&color=blue" /></a>
-</p>
-<br />
+-   [Git Basics - The basics of Git and GitHub!](https://talks.harshkapadia.me/git_basics)
+-   [Git Internals - How Does Git Work!?](https://talks.harshkapadia.me/git_internals)
+-   [Hacktoberfest, Open Source and Pull Requests](https://talks.harshkapadia.me/otc_open_source_hacktoberfest_2020)
 
-### Changelogs
+> To learn the basics of Git, refer to the [git_basics](https://harshkapadia2.github.io/git_basics) PWA.
 
-The changelog has been maintained in the [`CHANGELOG.md` file](CHANGELOG.md).
+### Contributions
 
-### Contributing
-
--   Contributors are welcome!
--   Please read the [`CONTRIBUTING.md` file](CONTRIBUTING.md) for contributing guidelines and the local setup guide.
+-   Contributions are most welcome!
+-   View the [`CONTRIBUTING.md`](CONTRIBUTING.md) file for further instructions.
 
 ### Code of Conduct
 
 Please be mindful of the [Code of Conduct](CODE_OF_CONDUCT.md) while contributing and interacting.
+
+<br />
+
+<sub>
+	Created using <a href="https://harshkapadia2.github.io/asciidoctor-jet"><i>Asciidoctor Jet</i></a>.
+	<br />
+	The Git logo belongs to <a href="https://www.git-scm.com">Git</a> and is used under the <a href="https://creativecommons.org/licenses/by/3.0/deed.en">CC BY 3.0 license</a>.
+</sub>

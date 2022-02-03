@@ -1,6 +1,6 @@
-= Asciidoctor Jet
+= Git Internals
 Harsh Kapadia
-v0.1.5
+v1
 :author:				Harsh Kapadia
 :toc:					left
 :favicon:				./static/img/favicon.ico
@@ -17,138 +17,34 @@ v0.1.5
 
 == About
 
-_Asciidoctor Jet_ is a ready-to-use jet black themed template for building static websites using link:https://asciidoctor.org[Asciidoctor^] with link:#_features[features and fonts added] to the default Asciidoctor template.
+This PWA is about the internals of link:https://harshkapadia2.github.io/git_basics/#_git[Git^].
 
-link:#_getting_started[Getting started] is very straightforward!
+It is Open Sourced at link:https://github.com/HarshKapadia2/git_internals[github.com/HarshKapadia2/git_internals^].
 
-== Features
+NOTE: The content of this site is covered through talks as well. Feel free to link:https://talks.harshkapadia.me/git_internals[watch the Git Internals talks^].
 
-* PWA
-	** Custom install prompt
-* Themes
-	** Theme switcher
-		*** Dark mode (Jet black)
-		*** Light mode
-	** First load theme depends on the browser theme and if toggled, is thereafter set as per user preference.
-* Lazy loading of images
-	** link:https://caniuse.com/mdn-html_elements_img_loading[Subject to browser support.^]
-* Fonts
-	** Montserrat
-	** PT Mono (Only for `code snippets`.)
-* Back to top button
-* Custom scrollbar
-* The repository includes a link:https://github.com/HarshKapadia2/asciidoctor-jet/tree/main/.github/workflows[workflow to build and deploy the site^] on GitHub Pages.
+== Prerequisites
 
-== Live Demos
+Before going through this PWA, it would be beneficial to know the basics of Git.
 
-Sites using the _Asciidoctor Jet_ template
+* Watch the link:https://talks.harshkapadia.me/git_basics[Git Basics talks^].
+* Go through the link:https://harshkapadia2.github.io/git_basics[git_basics^] PWA.
+* link:https://harshkapadia2.github.io/git_basics/#_resources[Misc resources^]
 
-* link:https://harshkapadia2.github.io/git_basics[git_basics^]
-* link:https://catchup.ourtech.community/summary[OTC CatchUp Summary^]
+include::content/git-directory.adoc[]
 
-[NOTE]
-====
-* link:https://github.com/HarshKapadia2/asciidoctor-jet/issues[Raise an issue^] on the repository to be featured here! (Please add a link to the site.)
-* Make sure to add the `asciidoctor-jet` label/topic to the site's repository for visibility!
-====
+include::content/git-objects.adoc[]
 
-== Using Asciidoctor Jet
-
-=== Getting Started
-
-* link:https://asciidoctor.org/#installation[Install Asciidoctor.^]
-* link:https://github.com/HarshKapadia2/asciidoctor-jet[Use this template.^]
-* Explore the link:#_file_structure[file structure].
-* link:#_adding_content[Add content.]
-* Run the command `sh build.sh` in the root directory of the project to build the site to the `build` directory.
-* link:#_serving_the_site_locally[Serve the built site locally] to check if all is good.
-* Push to GitHub and a workflow should automatically build and commit files to the `gh-pages` branch, which can be deployed using GitHub Pages.
-
-=== Adding Content
-
-include::./content/adding-content.adoc[]
-
-=== Serving the Site Locally
-
-After running the `sh build.sh` command, the site is built out to the `build` directory. It has to be served from there.
-
-There are various ways to serve file locally. **Run any of the following commands from the root directory of the project.**
-
-* Using the NPM package link:https://www.npmjs.com/package/http-server[`http-server`^] is preferred.
-
-[source, shell]
-----
-$ npx http-server "build"
-
-# OR
-
-$ npm install --global http-server
-$ http-server "build"
-----
-
-* The NPM package link:https://www.npmjs.com/package/serve[`serve`^] can be used.
-
-[source, shell]
-----
-$ npx serve "build"
-
-# OR
-
-$ npm install --global serve
-$ serve "build"
-----
-
-* The Python module link:https://docs.python.org/3/library/http.server.html[`http.server`^] can also be used.
-
-[source, shell]
-----
-$ python -m http.server
-
-# OR
-
-$ python3 -m http.server # python<version> -m http.server
-----
-
-=== File Structure
-
-The main content of the website resides in the link:https://github.com/HarshKapadia2/asciidoctor-jet/tree/main/src[`src` directory^] and the entry point for Asciidoctor is the link:https://github.com/HarshKapadia2/asciidoctor-jet/blob/main/src/index.adoc[`index.adoc` file^] in the `src` directory.
-
-The default structure of the `src` directory
-
-[source, shell]
-----
-src
-├───content
-│   └───adding-content.adoc
-├───static
-│   ├───css
-│   ├───img
-│   └───js
-├───docinfo-footer.html
-├───docinfo.html
-├───index.adoc
-├───manifest.webmanifest
-├───robots.txt
-└───service-worker.js
-----
-
-== Contributing
-
-* Contributors are welcome!
-* For any bugs or feature requests/modifications, feel free to link:https://github.com/HarshKapadia2/asciidoctor-jet/issues[raise an issue^] if it hasn't already been raised.
-* Go through the link:https://github.com/HarshKapadia2/asciidoctor-jet/blob/main/CONTRIBUTING.md[`CONTRIBUTING.md` file^] for local development environment setup instructions.
-* Feel free to link:https://github.com/HarshKapadia2/asciidoctor-jet/blob/main/CONTRIBUTING.md#further-help[contact the maintainer^] for any issues.
-* Check the link:https://github.com/HarshKapadia2/asciidoctor-jet/blob/main/CHANGELOG.md[changelog^] for changes in particular versions.
+include::content/resources.adoc[]
 
 '''
 
-// DO NOT remove the HTML block below as it is required for the PWA install prompt and the 'back to top' button.
 ++++
 <div class="pwa-install-div hidden">
 	<div id="pwa-install-text">Ready for offline use!</div>
 	<button id="pwa-install-btn">Install</button>
 	<button id="pwa-install-dismiss" aria-label="Dismiss PWA install prompt">
-		<img src="static/img/clear_cross.svg" alt="X">
+		<img src="static/img/cross.svg" alt="X">
 	</button>
 </div>
 
