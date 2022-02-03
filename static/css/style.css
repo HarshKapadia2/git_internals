@@ -1,0 +1,363 @@
+a {
+	color: #2156a5;
+	text-decoration-thickness: 1px;
+	text-underline-offset: 4px;
+}
+
+a code {
+	color: #2156a5;
+}
+
+a:hover,
+a:hover code,
+a code:hover {
+	color: #1d4b8f !important;
+}
+
+#footer a {
+	color: #90caf9 !important;
+}
+
+#footer a:hover {
+	color: #42a5f5 !important;
+}
+
+.imageblock {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.icon img {
+	width: 40px;
+	height: 40px;
+}
+
+pre,
+code {
+	background-color: #eeeeee !important;
+}
+
+h1,
+.title {
+	color: #ba3925 !important;
+}
+
+.pwa-install-div {
+	position: fixed;
+	bottom: 2.5vh;
+	left: 2vw;
+	display: flex;
+	align-items: center;
+	background-color: white;
+	padding: 0.5em;
+	box-shadow: 0 0 3px #bdbdbd;
+	border-radius: 5px;
+	z-index: 1000;
+}
+
+#pwa-install-btn {
+	color: white;
+	background-color: black;
+	padding: 0.3em 0.6em;
+	margin-right: 0.5em;
+	font-size: 15px;
+	border-radius: 5px;
+	border: 1px solid black;
+	box-shadow: 0 0 3px #bdbdbd;
+	cursor: pointer;
+}
+
+#pwa-install-btn {
+	margin: 0 0.8em 0 0.5em;
+}
+
+#pwa-install-dismiss {
+	background-color: transparent;
+	border: none;
+	display: grid;
+	place-items: center;
+	cursor: pointer;
+}
+
+#pwa-install-dismiss img {
+	height: 1.5em;
+	width: 1.5em;
+}
+
+.pwa-install-div-summon {
+	animation: 3s ease summon-div;
+}
+
+@keyframes summon-div {
+	from {
+		transform: translateX(-100vw);
+	}
+
+	to {
+		transform: translateX(0);
+	}
+}
+
+.pwa-install-div-dismiss {
+	animation: 2s ease dismiss-div;
+}
+
+@keyframes dismiss-div {
+	from {
+		transform: translateX(0);
+	}
+
+	to {
+		transform: translateX(-100vw);
+	}
+}
+
+.btn {
+	display: grid;
+	place-items: center;
+	background-color: white;
+	border-radius: 2em;
+	border: 1px solid white;
+	box-shadow: 0 0 5px #bdbdbd;
+	cursor: pointer;
+	z-index: 1000;
+	outline: none;
+}
+
+.btn:focus {
+	box-shadow: 0 0 5px #757575;
+}
+
+.btn img {
+	height: 1em;
+	width: 1em;
+}
+
+.back-to-top-btn {
+	padding: 1em;
+	position: fixed;
+	bottom: 2.5vh;
+	right: 2vw;
+}
+
+.theme-switcher {
+	padding: 1.5em;
+	position: absolute;
+	top: 2.5vh;
+	right: 2vw;
+	background: url("../img/moon.svg") no-repeat center;
+}
+
+.hidden {
+	display: none;
+}
+
+#footer {
+	background-color: black;
+	color: #e0e0e0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+/* ================================================== MOBILE EDGE CASES ==================================================== */
+
+body.mobile-edge-case .word-break-all {
+	word-break: break-all;
+}
+
+.x-overflow {
+	overflow-x: auto;
+}
+
+/* ================================================== TOC (LIGHT MODE) ============================================== */
+
+#toctitle,
+.sectlevel1 li a {
+	color: #ba3925 !important;
+}
+
+.sectlevel1 li a:hover {
+	color: #ba3925 !important;
+	text-decoration: underline !important;
+}
+
+.sectlevel2 li a {
+	color: #2156a5 !important;
+}
+
+.sectlevel2 li a:hover {
+	color: #1d4b8f !important;
+	text-decoration: underline !important;
+}
+
+/* ================================================= SCROLLBAR (LIGHT MODE) =================================================== */
+
+body::-webkit-scrollbar {
+	width: 0.7em;
+}
+
+#toc::-webkit-scrollbar {
+	width: 0.5em;
+}
+
+body::-webkit-scrollbar-track,
+#toc::-webkit-scrollbar-track {
+	background-color: #eeeeee;
+}
+
+body::-webkit-scrollbar-thumb,
+#toc::-webkit-scrollbar-thumb {
+	background-color: #bdbdbd;
+	border-radius: 2px;
+}
+
+/* ======================================================= DARK MODE =========================================================== */
+
+body.dark,
+body.dark .btn,
+body.dark table,
+body.dark th {
+	background-color: black;
+	color: #e0e0e0;
+}
+
+body.dark .btn {
+	box-shadow: 0 0 5px #616161;
+	border: 1px solid black;
+}
+
+body.dark .btn:focus {
+	box-shadow: 0 0 5px #9e9e9e;
+}
+
+body.dark .theme-switcher {
+	background: url("../img/sun.svg") no-repeat center;
+}
+
+body.dark h1,
+body.dark h2,
+body.dark h3,
+body.dark h4,
+body.dark h5,
+body.dark h6,
+body.dark #toctitle,
+body.dark .sidebarblock .title,
+body.dark .imageblock .title {
+	color: #ff8a80 !important;
+}
+
+body.dark blockquote::before {
+	color: #d32f2f !important;
+}
+
+body.dark code,
+body.dark pre {
+	background-color: #424242 !important;
+	color: #e0e0e0;
+}
+
+body.dark .sectlevel1 li a {
+	color: #ff8a80 !important;
+}
+
+body.dark a,
+body.dark a code,
+body.dark .sectlevel2 li a {
+	color: #90caf9 !important;
+}
+
+body.dark a:hover,
+body.dark a:hover code,
+body.dark a code:hover,
+body.dark .sectlevel2 li a:hover {
+	color: #42a5f5 !important;
+}
+
+body.dark #toc,
+body.dark .pwa-install-div {
+	background-color: black !important;
+}
+
+body.dark #toc {
+	border-left-color: #212121;
+	border-right-color: #212121;
+}
+
+body.dark .pwa-install-div {
+	box-shadow: 0 0 5px #424242;
+}
+
+body.dark #pwa-install-btn {
+	box-shadow: 0 0 5px #424242;
+	background-color: #e0e0e0;
+	border: 1px solid #e0e0e0;
+	color: black;
+}
+
+body.dark li,
+body.dark p,
+body.dark .details,
+body.dark td,
+body.dark blockquote,
+body.dark .attribution cite {
+	color: #e0e0e0 !important;
+}
+
+body.dark .sidebarblock {
+	background-color: #212121 !important;
+}
+
+body.dark::-webkit-scrollbar-track,
+body.dark #toc::-webkit-scrollbar-track {
+	background-color: #212121;
+}
+
+body.dark::-webkit-scrollbar-thumb,
+body.dark #toc::-webkit-scrollbar-thumb {
+	background-color: #616161;
+}
+
+/* ================================================ FONTS ================================================== */
+
+body,
+.admonitionblock td.content > .title,
+.audioblock > .title,
+.exampleblock > .title,
+.imageblock > .title,
+.listingblock > .title,
+.literalblock > .title,
+.stemblock > .title,
+.openblock > .title,
+.paragraph > .title,
+.quoteblock > .title,
+table.tableblock > .title,
+.verseblock > .title,
+.videoblock > .title,
+.dlist > .title,
+.olist > .title,
+.ulist > .title,
+.qlist > .title,
+.hdlist > .title,
+h1,
+h2,
+h3,
+#toctitle,
+.sidebarblock > .content > .title,
+h4,
+h5,
+h6,
+#toc ul,
+.admonitionblock > table td.icon .title,
+.verseblock pre,
+.conum[data-value] {
+	font-family: "Montserrat", sans-serif;
+}
+
+code,
+kbd,
+pre,
+samp {
+	font-family: "PT Mono", monospace;
+}
