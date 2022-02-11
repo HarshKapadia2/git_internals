@@ -1,5 +1,6 @@
 <p align="center">
-	<img src="./src/static/img/logo.svg" alt="Git Internals" width="80%" />
+	<img src="./src/static/img/logo-dark.svg#gh-dark-mode-only" alt="Git Internals" width="80%" />
+	<img src="./src/static/img/logo-light.svg#gh-light-mode-only" alt="Git Internals" width="80%" />
 	<br />
 	<br />
 	<b>Exploring the internals of Git</b>
@@ -10,8 +11,8 @@
 
 ### Author's Sessions
 
--   [Git Basics - The basics of Git and GitHub!](https://talks.harshkapadia.me/git_basics)
 -   [Git Internals - How Does Git Work!?](https://talks.harshkapadia.me/git_internals)
+-   [Git Basics - The basics of Git and GitHub!](https://talks.harshkapadia.me/git_basics)
 -   [Hacktoberfest, Open Source and Pull Requests](https://talks.harshkapadia.me/otc_open_source_hacktoberfest_2020)
 
 > To learn the basics of Git, refer to the [git_basics](https://harshkapadia2.github.io/git_basics) PWA.
