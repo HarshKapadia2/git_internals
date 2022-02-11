@@ -3,10 +3,10 @@
 	<img src="./src/static/img/logo-light.svg#gh-light-mode-only" alt="Git Internals" width="80%" />
 	<br />
 	<br />
-	<b>Exploring the internals of Git</b>
+	<b>Exploring the internals of Git.</b>
 	<br />
 	<br />
-	View the PWA at <a href="https://git.harshkapadia.me">git.harshkapadia.me</a>
+	View the PWA at <a href="https://git.harshkapadia.me">git.harshkapadia.me</a>.
 </p>
 
 ### Author's Sessions
