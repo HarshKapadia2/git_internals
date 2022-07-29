@@ -13,7 +13,7 @@ Git carries out its version control using these objects to store data and the in
 
 Some part of the internal working of Git will be explored through an example in this section.
 
-NOTE: Feel free to follow along and create the graphs below using link:https://harshkapadia2.github.io/git-graph[Git Graph^].
+NOTE: Feel free to follow along and create the graphs below using link:https://git-graph.harshkapadia.me[Git Graph^].
 
 Run `git init` to initialize an empty link:https://harshkapadia2.github.io/git_basics/#_repository[repository^] in the `inside_git` directory (root directory). A hidden directory `.git` is created in this root folder.
 
@@ -172,7 +172,7 @@ image::connection-graph-1.png[alt="Connection graph", 600, 600]
 [NOTE]
 ====
 * The blob `e69de` has been modified to blob `1a385` and so is not connected to the tree `1b219`. Only the latest blob of every added file is connected to the new tree object when a commit is made.
-* This graph can be created using link:https://harshkapadia2.github.io/git-graph[Git Graph^].
+* This graph can be created using link:https://git-graph.harshkapadia.me[Git Graph^].
 ====
 
 === Parent Commits
@@ -202,7 +202,7 @@ From the commit object, tree object and HEAD position, the connection graph look
 
 image::connection-graph-2.png[alt="Connection graph", 600, 600]
 
-NOTE: This graph can be created using link:https://harshkapadia2.github.io/git-graph[Git Graph^].
+NOTE: This graph can be created using link:https://git-graph.harshkapadia.me[Git Graph^].
 
 === Creating Directories
 
@@ -232,7 +232,7 @@ The graph of the repository as it stands now
 
 image::connection-graph-3.png[alt="Connection Graph", 600, 600]
 
-NOTE: This graph can be created using link:https://harshkapadia2.github.io/git-graph[Git Graph^].
+NOTE: This graph can be created using link:https://git-graph.harshkapadia.me[Git Graph^].
 
 === Renaming Files
 
@@ -254,7 +254,7 @@ The structure of the repo.
 
 image::connection-graph-4.png[alt="Connection Graph", 800, 800]
 
-NOTE: This graph can be created using link:https://harshkapadia2.github.io/git-graph[Git Graph^].
+NOTE: This graph can be created using link:https://git-graph.harshkapadia.me[Git Graph^].
 
 === Modifying Large Files
 
@@ -389,5 +389,5 @@ image::connection-graph-5.png[alt="Connection Graph", 600, 600]
 [NOTE]
 ====
 * If the empty commit is the first commit in the repository (initial commit), then it will have its own empty Tree Object associated with it. In all other cases an empty commit will point to the latest Tree Object in the branch.
-* This graph can be created using link:https://harshkapadia2.github.io/git-graph[Git Graph^].
+* This graph can be created using link:https://git-graph.harshkapadia.me[Git Graph^].
 ====
