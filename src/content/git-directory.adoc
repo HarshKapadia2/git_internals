@@ -53,7 +53,8 @@ On executing the link:https://harshkapadia2.github.io/git_basics/#_git_init[`git
 │   └───pack
 │       ├───multi-pack-index
 │       ├───<*.idx>
-│       └───<*.pack>
+│       ├───<*.pack>
+│       └───<*.rev>
 ├───ORIG_HEAD
 ├───packed-refs
 ├───rebase-merge
